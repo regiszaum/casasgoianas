@@ -1,5 +1,6 @@
 
-# casasgoianas
+# E-COMMERCE * CASAS GOIANAS *
+
 Projeto de E-commerce pelo nosso instrutor e líder Yure Nery
 
 ## Client Side - VueJS + PugJS + Stylus + Jest
@@ -17,5 +18,38 @@ Projeto de E-commerce pelo nosso instrutor e líder Yure Nery
 1 - npm install -g json-server -> instalar na maquina
 
 2 - json-server --watch db.json -> rodar no server na maquina local
+
+## Requisitos do projeto
+
+### Tecnologias
+    Vue 2 ✔
+    Vuex ✔
+    Vue Router ✔
+    Bootstrap ✔
+    Testes (com jest) ✔
+    Json Server como mock de dados
+    Pug ✔
+    Stylus ✔
+
+### Requisitos
+    Página de produtos (Lista de produtos / Home)
+    Página de detalhe do produto
+    Carrinho de compras
+    Checkout
+
+### Modelos
+        ♦ Produto
+            Nome
+            Descrição
+            Preço
+            Imagem
+            Estoque
+        ♦ Avaliação
+            Título
+            Conteúdo
+            Nota (0-5)
+            Nome do cliente
+            Obs.: um produto pode ter 0 ou n avaliações
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
