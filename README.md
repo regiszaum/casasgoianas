@@ -1,5 +1,5 @@
 
-# E-COMMERCE * CASAS GOIANAS *
+# E-COMMERCE * MINHA BOTINA * MODA COWBOY
 
 Projeto de E-commerce pelo nosso instrutor e líder Yure Nery
 
@@ -53,3 +53,7 @@ Projeto de E-commerce pelo nosso instrutor e líder Yure Nery
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### TASKS - REGIS
+
+### TASKS - JOAO MARIO
