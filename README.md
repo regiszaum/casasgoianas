@@ -80,4 +80,4 @@ https://www.insiderstore.com.br/
 
 ### Atomic Design
 
-![alt text](http:///to/img.png)
+![alt text](https://github.com/regiszaum/casasgoianas/blob/main/Atomix%20Design.png)
