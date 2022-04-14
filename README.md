@@ -58,13 +58,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### TASKS 
 
 * Home
-    Componentes: 
-        Navbar(global)
+    * Componentes: 
+        * Navbar(global)
             * Categorias
             * Icone do carrinho
-        Preview de produtos
+        * Preview de produtos
             * Slider/Carrousel
-        Divisão de categorias por sexo
+        * Divisão de categorias por sexo
             * Homem
             * Mulher
         Footer (global)
