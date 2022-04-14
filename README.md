@@ -27,9 +27,10 @@ Projeto de E-commerce pelo nosso instrutor e líder Yure Nery
     Vue Router ✔
     Bootstrap ✔
     Testes (com jest) ✔
-    Json Server como mock de dados
+    Json Server como mock de dados ✔
     Pug ✔
     Stylus ✔
+    Atomic Design ✔
 
 ### Requisitos
     Página de produtos (Lista de produtos / Home)
@@ -54,6 +55,24 @@ Projeto de E-commerce pelo nosso instrutor e líder Yure Nery
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### TASKS - REGIS
+### TASKS 
 
-### TASKS - JOAO MARIO
+* Home
+    Componentes: 
+        Navbar(global)
+            * Categorias
+            * Icone do carrinho
+        Preview de produtos
+            * Slider/Carrousel
+        Divisão de categorias por sexo
+            * Homem
+            * Mulher
+        Footer (global)
+* Página de Produtos
+* Página de checkout
+* Página de detalhes do produto
+* Localização
+
+Template de exemplo (inspiração) :
+
+https://www.insiderstore.com.br/
