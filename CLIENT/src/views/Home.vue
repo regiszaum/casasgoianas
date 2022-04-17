@@ -1,14 +1,14 @@
-<template>
-  <div class="home">
-    Moda Cowboy
-  </div>
+<template lang='pug'>
+  .home
+    Corousel
 </template>
 
 <script>
+import Corousel from '../components/Corousel.vue';
 
 export default {
-  name: 'Home',
   components: {
+    Corousel,
   },
 };
 </script>
