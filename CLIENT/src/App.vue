@@ -1,10 +1,19 @@
 <template lang="pug">
   #app
     #nav
-      router-link(to="/") Home
-      router-link(to="/about") About
+      navbar
     router-view
 </template>
+
+<script>
+import Navbar from '@/components/NavBar.vue';
+
+export default {
+  components: {
+    Navbar,
+  },
+};
+</script>
 
 <style lang="stylus">
 #app
@@ -13,5 +22,4 @@
   -moz-osx-font-smoothing grayscale
   text-align center
   color #2c3e50
-  margin-top 60px
 </style>
