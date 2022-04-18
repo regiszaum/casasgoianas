@@ -13,13 +13,13 @@
         li.nav-item
           a.nav-link.active(aria-current='page' href='#') Home
         li.nav-item
-          a.nav-link(href='#') Link
+          a.nav-link(href='#') MASCULINA
         li.nav-item.dropdown
           a#navbarDropdown.nav-link.dropdown-toggle(
             href='#' role='button'
             data-bs-toggle='dropdown'
             aria-expanded='false')
-            | Dropdown
+            | FEMININA
           ul.dropdown-menu(aria-labelledby='navbarDropdown')
             li
               a.dropdown-item(href='#') Action

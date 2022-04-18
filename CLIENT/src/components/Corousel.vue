@@ -20,7 +20,7 @@
       aria-label='Slide 3'
     )
     .carousel-inner
-      .carousel-item.active(data-bs-interval='1000')
+      .carousel-item.active(data-bs-interval='3000')
         img.w-100(
           src='@/assets/bota1D.png'
           alt='...'
