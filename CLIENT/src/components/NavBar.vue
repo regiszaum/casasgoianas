@@ -1,6 +1,6 @@
 <template lang='pug'>
   nav.navbar.navbar-expand-lg.navbar-light.bg-light.container-fluid
-    a.navbar-brand(href='#') Navbar
+    router-link(to='/') Home
     button.navbar-toggler(
       type='button' data-bs-toggle='collapse'
       data-bs-target='#navbarSupportedContent'
