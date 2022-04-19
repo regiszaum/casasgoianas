@@ -3,15 +3,15 @@
     HomeCorousel
     h1.mt-4.mb-4 Produtos
     .product-space.d-flex.justify-content-center
-      ProductCard(imageName='botina1.png' productName='Botina Cinza' productPrice=200.56)
-      ProductCard(imageName='botina2.png' productName='Botina Azul' productPrice=500.45)
-      ProductCard(imageName='calca2.png' productName='Calça jeans' productPrice=600.65)
-      ProductCard(imageName='calca1.png' productName='Calça jeans' productPrice=800.00)
+      ProductCard(imageName='botina1.png' productName='Botina Cinza' :productPrice='200.56')
+      ProductCard(imageName='botina2.png' productName='Botina Azul' :productPrice='500.45')
+      ProductCard(imageName='calca2.png' productName='Calça jeans' :productPrice='600.65')
+      ProductCard(imageName='calca1.png' productName='Calça jeans' :productPrice='800.00')
     h1.mt-4.mb-4 Categorias
     .category-space.d-flex.justify-content-center
-      Category(imageName='BotinasC.png')
-      Category(imageName='CalcasC.png')
-      Category(imageName='CamisasC.png')
+      Category(imageName='BotinasC.png' categoryName='Botinas')
+      Category(imageName='CalcasC.png' categoryName='Calcas')
+      Category(imageName='CamisasC.png' categoryName='Camisas')
 </template>
 
 <script>
