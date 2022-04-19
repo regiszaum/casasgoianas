@@ -5,7 +5,6 @@
             :src='require(`@/assets/${imageName}`)'
             alt='...'
         )
-    span.ps-4.fw-bold {{productName}}
 </template>
 
 <script>
