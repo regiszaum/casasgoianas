@@ -2,7 +2,7 @@
   .prduct-card.d-flex.flex-column.text-start
     .img-card
       img(
-        :src='require(`@/../public/produtos/feminina/${imageName}`)'
+        :src='require(`@/../public/produtos/${categoria}/${imageName}`)'
         alt='...'
       )
     span.ps-4.fw-bold {{productName}}
@@ -22,6 +22,10 @@ export default {
       required: true,
     },
     imageName: {
+      type: String,
+      required: true,
+    },
+    categoria: {
       type: String,
       required: true,
     },
