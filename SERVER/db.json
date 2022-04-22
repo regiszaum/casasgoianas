@@ -1,9 +1,29 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "produtos": [
+    {"id": 1, "name": "Bota 1", "sex": "M", "type": "bota"},
+    {"id": 2, "name": "Bota 2", "sex": "M", "type": "bota"},
+    {"id": 3, "name": "Bota 3", "sex": "M", "type": "bota"},
+    {"id": 4, "name": "Calça 1", "sex": "M", "type": "calca"},
+    {"id": 5, "name": "Calça 2", "sex": "M", "type": "calca"},
+    {"id": 6, "name": "Calça 3", "sex": "M", "type": "calca"},
+    {"id": 7, "name": "Camisa 1", "sex": "M", "type": "camisa"},
+    {"id": 8, "name": "Camisa 2", "sex": "M", "type": "camisa"},
+    {"id": 9, "name": "Camisa 3", "sex": "M", "type": "camisa"},
+    {"id": 10, "name": "Bota 1", "sex": "F", "type": "bota"},
+    {"id": 11, "name": "Bota 2", "sex": "F", "type": "bota"},
+    {"id": 12, "name": "Bota 3", "sex": "F", "type": "bota"},
+    {"id": 13, "name": "Calça 1", "sex": "F", "type": "calca"},
+    {"id": 14, "name": "Calça 2", "sex": "F", "type": "calca"},
+    {"id": 15, "name": "Calça 3", "sex": "F", "type": "calca"},
+    {"id": 16, "name": "Camisa 1", "sex": "F", "type": "camisa"},
+    {"id": 17, "name": "Camisa 2", "sex": "F", "type": "camisa"},
+    {"id": 18, "name": "Camisa 3", "sex": "F", "type": "camisa"},
+    {
+      "acessorios": {
+        "cinto": {},
+        "esporas":{},
+        "berrante":{}
+      }
+    }
+  ]
 }
