@@ -39,7 +39,7 @@ export default {
     margin: 0 20px 7px 20px
     overflow: hidden
     width: 400px
-    height: 450px
+    height: 400px
     border: solid 0.3px black
     border-radius: 7px
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
