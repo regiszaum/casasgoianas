@@ -5,17 +5,29 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    produtos: [],
+    products: [],
   },
   mutations: {
+    SET_PRODUCTS(state, payload) {
+      state.products = payload.products;
+    },
   },
   actions: {
-    getProducts() {
-      fetch('http://localhost:3000/produtos/').then((res) => res.json()).then((result) => {
-        console.log(result);
-      }).catch((err) => {
-        console.log(err);
+    fetchProducts({ commit }) {
+      return new Promise((resolve, reject) => {
+        fetch('http://localhost:3000/produtos/').then((res) => res.json()).then((result) => {
+          commit('SET_PRODUCTS', { products: result });
+          resolve();
+        }).catch((err) => {
+          console.log(err);
+          reject(err);
+        });
       });
+    },
+  },
+  getters: {
+    getProducts(state) {
+      return state.products;
     },
   },
   modules: {

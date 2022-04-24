@@ -2,7 +2,7 @@
   .prduct-card.d-flex.flex-column.text-start
     .img-card
       img(
-        :src='require(`@/../public/produtos/${categoria}/${imageName}`)'
+        :src='image'
         alt='...'
       )
     span.ps-4.fw-bold {{productName}}
@@ -21,7 +21,7 @@ export default {
       type: Number,
       required: true,
     },
-    imageName: {
+    image: {
       type: String,
       required: true,
     },

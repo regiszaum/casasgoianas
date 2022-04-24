@@ -174,6 +174,7 @@
             :productPrice='320.00'
           )
 </template>
+
 <script>
 import ProductCard from '@/components/ProductCard.vue';
 import Category from '@/components/Category.vue';
