@@ -24,7 +24,7 @@
         img.w-100(
           src='@/assets/cowboybootsL.jpg'
           alt='...'
-          style='max-width: 1920px;'
+          style='position: relative; top: -250px; left: -100px;'
         )
         //-.carousel-caption.d-none.d-md-block
         //-  h5 First slide label
@@ -33,7 +33,7 @@
         img.d-block.w-100(
           src='@/assets/cowboyL.jpg'
           alt='...'
-          style='position: relative; top: -150px;'
+          style='position: relative; top: -250px; left: -100px;'
         )
         //-.carousel-caption.d-none.d-md-block
         //-  h5 Second slide label
@@ -52,7 +52,7 @@
 <style scoped lang='stylus'>
   .carousel-item
     width: 1920px
-    height: 925px
+    height: 88vh
     overflow: hidden
   .carousel-dark .carousel-indicators .nav-btn
     background-color: white !important
