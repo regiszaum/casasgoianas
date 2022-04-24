@@ -3,7 +3,7 @@
     HomeCorousel
     h1.mt-4.mb-4 Produtos
     .product-space.d-flex.justify-content-center
-      ProductsCorousel(:products='nProducts(12)')
+      ProductsCorousel(:products='nProducts(9)')
     h1.mt-4.mb-4 Categorias
     .category-space.d-flex.justify-content-center
       Category(imageName='BotinasC.png' categoryName='Botinas')

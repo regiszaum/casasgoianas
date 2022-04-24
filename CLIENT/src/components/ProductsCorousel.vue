@@ -22,7 +22,7 @@
             :categoria='product.type'
             :image='product.imageurl'
             :productName='product.name'
-            :productPrice='320.00'
+            :productPrice='product.price'
           )
 </template>
 
@@ -54,7 +54,6 @@ export default {
   },
   watch: {
     products(newValue) {
-      console.log(newValue);
       if (newValue.length > 0) {
         this.loading = false;
       }
