@@ -1,5 +1,5 @@
 <template lang='pug'>
-  #exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  #exampleModal.modal.fade.right(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
     .modal-dialog
       .modal-content
         .modal-header
@@ -13,14 +13,12 @@
 </template>
 
 <style scoped lang='stylus'>
-  #exampleModal
-    position: fixed
-    right: 0
-    left: auto
-    top: -30px
-    margin: auto
-    width: 320px
-    height: 100vh !important
-    .modal-dialog  .modal-content
-      height: 100vh !important
+#exampleModal
+  height: 100%
+  .modal-dialog
+    margin-right: 0px;
+    margin-top: 0px;
+    height: 100%
+    .modal-content
+      height: 100%
 </style>

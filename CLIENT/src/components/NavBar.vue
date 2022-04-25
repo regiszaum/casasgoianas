@@ -1,29 +1,28 @@
 <template lang='pug'>
   nav.navbar.navbar-expand-lg.navbar-light.bg-light.container-fluid
-    router-link(to='/')
-      img.icon(src='@/../public/android-chrome-192x192.png')
-    button.navbar-toggler(
-      type='button' data-bs-toggle='collapse'
-      data-bs-target='#navbarSupportedContent'
-      aria-controls='navbarSupportedContent'
-      aria-expanded='false'
-      aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    #navbarSupportedContent.collapse.navbar-collapse
-      ul.navbar-nav.me-auto.mb-2.mb-lg-0
-        li.nav-item
-          router-link.nav-link.active(to='/') Home
-        li.nav-item
-          router-link.nav-link(to='/produtos') Produtos
-        li.nav-item
-          button(
-            type='button'
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          )
-            i.bi.bi-cart3.d-flex(
-              @click='showCartProducts'
-            )
+    .container-fluid
+      button.navbar-toggler(
+        type='button'
+        data-bs-toggle='collapse'
+        data-bs-target='#navbarSupportedContent'
+        aria-controls='navbarSupportedContent'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+      )
+        span.navbar-toggler-icon
+      router-link.navbar-brand(to='/')
+        img.icon(src='@/../public/android-chrome-192x192.png')
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+          li.nav-item
+            router-link.nav-link.active(to='/') Home
+          li.nav-item
+            router-link.nav-link(to='/produtos') Produtos
+        i.bi.bi-cart3.d-flex(
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          @click='showCartProducts'
+        )
         //-li.nav-item.dropdown
         //-  a#navbarDropdown.nav-link.dropdown-toggle(
         //-    href='#' role='button'
@@ -76,4 +75,6 @@ i.bi.bi-cart3
   margin-left: 62.5rem
 i.bi.bi-cart3:hover
   color: var(--verde)
+.bi-cart3
+  cursor: pointer
 </style>
