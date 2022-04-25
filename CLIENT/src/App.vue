@@ -22,4 +22,8 @@ export default {
   -moz-osx-font-smoothing grayscale
   text-align center
   color #2c3e50
+  --bege: #EDE6DB
+  --verde: #417D7A
+  --verde-dois: #1D5C63
+  --verde-escuro: #1A3C40
 </style>

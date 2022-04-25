@@ -41,4 +41,8 @@
 .icon
   width: auto
   height: 70px
+.navbar
+  background-color: var(--verde-escuro) !important
+a.nav-link
+  color: var(--bege) !important
 </style>
