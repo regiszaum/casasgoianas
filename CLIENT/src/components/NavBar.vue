@@ -15,6 +15,9 @@
           router-link.nav-link.active(to='/') Home
         li.nav-item
           router-link.nav-link(to='/produtos') Produtos
+        li.nav-item
+          router-link.nav-link(to='/')
+            i.bi.bi-cart3.d-flex
         //-li.nav-item.dropdown
         //-  a#navbarDropdown.nav-link.dropdown-toggle(
         //-    href='#' role='button'
@@ -45,4 +48,11 @@
   background-color: var(--verde-escuro) !important
 a.nav-link
   color: var(--bege) !important
+i.bi.bi-cart3
+  color: var(--bege)
+  font-size: 1.563rem
+  display flex !important
+  margin-left: 62.5rem
+i.bi.bi-cart3:hover
+  color: var(--verde)
 </style>
