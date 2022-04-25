@@ -6,10 +6,22 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     products: [],
+    usuario: {
+      carrinho: [],
+    },
   },
   mutations: {
     SET_PRODUCTS(state, payload) {
       state.products = payload.products;
+    },
+    ADD_PRODUCT_TO_CART(state, newProduct) {
+      for (let i = 0; i < state.usuario.carrinho.length; i += 1) {
+        if (state.usuario.carrinho[i].productId === newProduct.productId) {
+          state.usuario.carrinho[i].qtd += newProduct.qtd;
+          return;
+        }
+      }
+      state.usuario.carrinho.push(newProduct);
     },
   },
   actions: {
@@ -33,6 +45,9 @@ export default new Vuex.Store({
     getProductById: (state) => (id) => {
       return state.products.find((product) => product.id === id);
     },
+    getCartProducts(state) {
+      return state.usuario.carrinho;
+    }
   },
   modules: {
   },

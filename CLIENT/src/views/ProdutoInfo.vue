@@ -16,11 +16,14 @@
             type='button',
             @click='increaseCount'
           ) +
-        button.btn.btn-secondary.btn-lg.mt-4(type='button') Adicionar ao Carrinho
+        button.btn.btn-secondary.btn-lg.mt-4(
+          type='button'
+          @click='addToCart'
+          ) Adicionar ao Carrinho
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 
 export default {
   data() {
@@ -33,11 +36,15 @@ export default {
     this.produto = this.getProductById(this.$route.params.id);
   },
   methods: {
+    ...mapMutations(['ADD_PRODUCT_TO_CART']),
     increaseCount() {
       this.produtoQtd += 1;
     },
     decreaseCount() {
       if (this.produtoQtd !== 1) this.produtoQtd -= 1;
+    },
+    addToCart() {
+      this.ADD_PRODUCT_TO_CART({ productId: this.$route.params.id, qtd: this.produtoQtd });
     },
   },
   computed: {

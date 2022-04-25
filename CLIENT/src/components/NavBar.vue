@@ -16,8 +16,9 @@
         li.nav-item
           router-link.nav-link(to='/produtos') Produtos
         li.nav-item
-          router-link.nav-link(to='/')
-            i.bi.bi-cart3.d-flex
+          i.bi.bi-cart3.d-flex(
+            @click='showCartProducts'
+          )
         //-li.nav-item.dropdown
         //-  a#navbarDropdown.nav-link.dropdown-toggle(
         //-    href='#' role='button'
@@ -39,6 +40,21 @@
       //-  input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
       //-  button.btn.btn-outline-success(type='submit') Search
 </template>
+
+<script>
+import { mapGetters } from 'vuex';
+
+export default {
+  methods: {
+    showCartProducts() {
+      console.log(this.getCartProducts);
+    },
+  },
+  computed: {
+    ...mapGetters(['getCartProducts']),
+  },
+};
+</script>
 
 <style scoped lang='stylus'>
 .icon
