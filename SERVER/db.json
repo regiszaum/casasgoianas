@@ -6,6 +6,8 @@
       "sex": "M",
       "type": "bota",
       "imageurl": "http://localhost:3000/assets/images/botina1M.jpg",
+      "description": "Uma bela botina edicao 1",
+      "stock": "7",
       "price": 200.99
     },
     {
@@ -14,6 +16,8 @@
       "sex": "M",
       "type": "bota",
       "imageurl": "http://localhost:3000/assets/images/botina2M.jpg",
+      "description": "Uma bela botina edicao 2",
+      "stock": "11",
       "price": 260.99
     },
     {
@@ -22,6 +26,8 @@
       "sex": "M",
       "type": "bota",
       "imageurl": "http://localhost:3000/assets/images/botina3M.png",
+      "description": "Uma bela botina edicao 3",
+      "stock": "2",
       "price": 230.99
     },
     {
@@ -30,6 +36,8 @@
       "sex": "M",
       "type": "calca",
       "imageurl": "http://localhost:3000/assets/images/calca1M.png",
+      "description": "Uma bela calça edicao 1",
+      "stock": "33",
       "price": 400.99
     },
     {
@@ -38,6 +46,8 @@
       "sex": "M",
       "type": "calca",
       "imageurl": "http://localhost:3000/assets/images/calca2M.png",
+      "description": "Uma bela calça edicao 2",
+      "stock": "8",
       "price": 500.99
     },
     {
@@ -46,6 +56,8 @@
       "sex": "M",
       "type": "calca",
       "imageurl": "http://localhost:3000/assets/images/calca3M.png",
+      "description": "Uma bela calça edicao 3",
+      "stock": "18",
       "price": 320.99
     },
     {
@@ -54,6 +66,8 @@
       "sex": "M",
       "type": "camisa",
       "imageurl": "http://localhost:3000/assets/images/camisa1M.png",
+      "description": "Uma bela camisa edicao 1",
+      "stock": "80",
       "price": 120.99
     },
     {
@@ -62,6 +76,8 @@
       "sex": "M",
       "type": "camisa",
       "imageurl": "http://localhost:3000/assets/images/camisa2M.png",
+      "description": "Uma bela camisa edicao 2",
+      "stock": "98",
       "price": 500.99
     },
     {
@@ -70,6 +86,8 @@
       "sex": "M",
       "type": "camisa",
       "imageurl": "http://localhost:3000/assets/images/camisa3M.png",
+      "description": "Uma bela camisa edicao 3",
+      "stock": "19",
       "price": 99.99
     },
     {
@@ -78,6 +96,8 @@
       "sex": "F",
       "type": "bota",
       "imageurl": "http://localhost:3000/assets/images/botina1F.png",
+      "description": "Uma bela bota edicao 1",
+      "stock": "98",
       "price": 140.99
     },
     {
@@ -86,6 +106,8 @@
       "sex": "F",
       "type": "bota",
       "imageurl": "http://localhost:3000/assets/images/botina2F.png",
+      "description": "Uma bela bota edicao 2",
+      "stock": "55",
       "price": 125.99
     },
     {
@@ -94,6 +116,8 @@
       "sex": "F",
       "type": "bota",
       "imageurl": "http://localhost:3000/assets/images/botina3F.jpeg",
+      "description": "Uma bela bota edicao 3",
+      "stock": "66",
       "price": 200.00
     },
     {
@@ -102,6 +126,8 @@
       "sex": "F",
       "type": "calca",
       "imageurl": "http://localhost:3000/assets/images/calca1F.png",
+      "description": "Uma bela calca edicao 1",
+      "stock": "34",
       "price": 200.99
     },
     {
@@ -110,6 +136,8 @@
       "sex": "F",
       "type": "calca",
       "imageurl": "http://localhost:3000/assets/images/calca2F.png",
+      "description": "Uma bela calca edicao 2",
+      "stock": "33",
       "price": 260.99
     },
     {
@@ -118,6 +146,8 @@
       "sex": "F",
       "type": "calca",
       "imageurl": "http://localhost:3000/assets/images/calca3F.png",
+      "description": "Uma bela calca edicao 3",
+      "stock": "70",
       "price": 240.99
     },
     {
@@ -126,6 +156,8 @@
       "sex": "F",
       "type": "camisa",
       "imageurl": "http://localhost:3000/assets/images/camisa3F.png",
+      "description": "Uma bela camisa edicao 1",
+      "stock": "99",
       "price": 120.99
     },
     {
@@ -134,6 +166,8 @@
       "sex": "F",
       "type": "camisa",
       "imageurl": "http://localhost:3000/assets/images/camisa2F.png",
+      "description": "Uma bela camisa edicao 2",
+      "stock": "33",
       "price": 140.99
     },
     {
@@ -142,14 +176,95 @@
       "sex": "F",
       "type": "camisa",
       "imageurl": "http://localhost:3000/assets/images/camisa3F.png",
+      "description": "Uma bela camisa edicao 3",
+      "stock": "11",
       "price": 124.99
     },
     {
-      "acessorios": {
-        "cinto": {},
-        "esporas": {},
-        "berrante": {}
-      }
+      "id": 19,
+      "name": "Cinto 1",
+      "type": "cinto",
+      "imageurl": "http://localhost:3000/assets/images/cinto1.png",
+      "description": "Uma belo cinto 1",
+      "stock": "11",
+      "price": 111.00
+    },
+    {
+      "id": 20,
+      "name": "Cinto 2",
+      "type": "cinto",
+      "imageurl": "http://localhost:3000/assets/images/cinto2.png",
+      "description": "Uma belo cinto 2",
+      "stock": "22",
+      "price": 211.00
+    },
+    {
+      "id": 21,
+      "name": "Cinto 3",
+      "type": "cinto",
+      "imageurl": "http://localhost:3000/assets/images/cinto3.png",
+      "description": "Uma belo cinto 3",
+      "stock": "50",
+      "price": 100.00
+    },
+    {
+      "id": 22,
+      "name": "Chapeu 1",
+      "type": "chapeu",
+      "imageurl": "http://localhost:3000/assets/images/chapeu1.png",
+      "description": "Uma belo chapéu 1",
+      "stock": "10",
+      "price": 500.00
+    },
+    {
+      "id": 23,
+      "name": "Chapeu 2",
+      "type": "chapeu",
+      "imageurl": "http://localhost:3000/assets/images/chapeu2.png",
+      "description": "Uma belo chapéu 2",
+      "stock": "50",
+      "price": 350.00
+    },
+    {
+      "id": 24,
+      "name": "Chapeu 3",
+      "type": "chapeu",
+      "imageurl": "http://localhost:3000/assets/images/chapeu3.png",
+      "description": "Uma belo chapéu 3",
+      "stock": "60",
+      "price": 150.00
+    }
+  ],
+  "avaliacao": [
+    {
+      "clienteName": "Joao Gomes",
+      "title": "Muito bom esse produto",
+      "content": "Amei a qualidade, o tamanho e o formato!!!",
+      "noteValue": 5
+    },
+    {
+      "clienteName": "Ze Vaqueiro",
+      "title": "Excelente atendimento, recomendo!",
+      "content": "Equipe profissional e cumpre o prazo de entrega, comprarei mais!",
+      "noteValue": 5
+    },
+    {
+      "clienteName": "Xitaozinho",
+      "title": "Faltou a desejar! Esperava mais",
+      "content": "Na foto a qualidade está otima, porém, quando chegou, o tecido é bem inferior",
+      "noteValue": 2
+    },
+    {
+      "clienteName": "Xororo",
+      "title": "Meu produto veio rasgado, quero trocar!",
+      "content": "O produto veio rasgado e a embalagem toda amassado",
+      "noteValue": 1
+    },
+    {
+      "clienteName": "Tarcisio",
+      "title": "Nota 3 pela demora no frete, mas pelo preço, compensou...",
+      "content": "Demora na entrega, aff!",
+      "noteValue": 3
     }
   ]
 }
