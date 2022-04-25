@@ -29,6 +29,10 @@ export default new Vuex.Store({
     getProducts(state) {
       return state.products;
     },
+    /* eslint-disable */
+    getProductById: (state) => (id) => {
+      return state.products.find((product) => product.id === id);
+    },
   },
   modules: {
   },
