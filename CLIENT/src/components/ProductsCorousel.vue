@@ -19,6 +19,7 @@
           ProductCard(
             v-for='product in products.slice(((index - 1) * 3), ((index - 1) * 3 + 3))'
             :key='product.id'
+            :productId='product.id'
             :categoria='product.type'
             :image='product.imageurl'
             :productName='product.name'
