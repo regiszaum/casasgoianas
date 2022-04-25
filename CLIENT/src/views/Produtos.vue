@@ -1,10 +1,18 @@
 <template lang="pug">
   div
     .categorias.container.d-flex.w-100
-      .col.col-masculina MASCULINA
-      .col.col-acessorios ACESSÓRIOS
-      .col.col-feminina FEMININA
-    .container.categoria-homem.mt-4
+      button.col.col-masculina(
+        @click='showMasculina = !showMasculina'
+      ) MASCULINA
+      button.col.col-acessorios(
+        @click='showAcessorios = !showAcessorios'
+      ) ACESSÓRIOS
+      button.col.col-feminina(
+        @click='showFeminina = !showFeminina'
+      ) FEMININA
+    .container.categoria-homem.mt-4(
+      v-show='showMasculina'
+    )
       h1 MODA PARA HOMENS
         h3 Seu estilo rústico mais agroboy
         h2.mt-4.mb-4 Camisas
@@ -67,7 +75,9 @@
             productName='Bota Xororo'
             :productPrice='299.00'
           )
-    .container.categoria-mulher.mt-4
+    .container.categoria-mulher.mt-4(
+      v-show='showFeminina'
+    )
       h1 MODA PARA MULHERES
         h3 Seu estilo rústico mais agrogirl
         h2.mt-4.mb-4 Camisas
@@ -130,7 +140,9 @@
             productName='Botina Bruna'
             :productPrice='300.00'
           )
-    .container.categoria-acessorio.mt-4
+    .container.categoria-acessorio.mt-4(
+      v-show='showAcessorios'
+    )
       h1 ACESSÓRIOS
         h3 O melhor do estilo country
         h2.mt-4.mb-4 Cintos
@@ -184,9 +196,15 @@ export default {
     ProductCard,
     Category,
   },
+  data() {
+    return {
+      showMasculina: true,
+      showFeminina: true,
+      showAcessorios: true,
+    };
+  },
 };
 </script>
 
 <style lang="stylus" scoped>
-
 </style>
