@@ -16,9 +16,14 @@
         li.nav-item
           router-link.nav-link(to='/produtos') Produtos
         li.nav-item
-          i.bi.bi-cart3.d-flex(
-            @click='showCartProducts'
+          button(
+            type='button'
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
           )
+            i.bi.bi-cart3.d-flex(
+              @click='showCartProducts'
+            )
         //-li.nav-item.dropdown
         //-  a#navbarDropdown.nav-link.dropdown-toggle(
         //-    href='#' role='button'
