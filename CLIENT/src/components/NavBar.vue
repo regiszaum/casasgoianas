@@ -43,12 +43,17 @@
       //-form.d-flex
       //-  input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
       //-  button.btn.btn-outline-success(type='submit') Search
+    CartModal
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+import CartModal from '@/components/CartModal.vue';
 
 export default {
+  components: {
+    CartModal,
+  },
   methods: {
     showCartProducts() {
       console.log(this.getCartProducts);
