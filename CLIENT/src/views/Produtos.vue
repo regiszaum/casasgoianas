@@ -1,6 +1,6 @@
 <template lang="pug">
-  div
-    .categorias.container.d-flex.w-100
+  div#produtos
+    .categorias.d-flex
       button.col.col-masculina(
         @click='showMasculina'
       ) MASCULINA
@@ -138,19 +138,26 @@ export default {
     ...mapActions(['fetchProducts']),
     showMasculina() {
       this.items = this.getProducts.filter((product) => product.sex === 'M');
-      console.log(this.items);
     },
     showFeminina() {
       this.items = this.getProducts.filter((product) => product.sex === 'F');
-      console.log(this.items);
     },
     showAcessorios() {
       this.items = this.getProducts.filter((product) => product.category === 'accessory');
-      console.log(this.items);
     },
   },
 };
 </script>
 
 <style lang="stylus" scoped>
+#produtos
+  background-color: var(--verde)
+  h1
+    color: var(--bege)
+    font-weight: bold
+  button
+    background-color: var(--verde-dois)
+    &:hover
+      background-color: var(--verde)
+      border: 2px solid var(--bege)
 </style>

@@ -41,8 +41,14 @@ export default {
 </script>
 
 <style scoped lang='stylus'>
+.home
+  background-color: var(--verde-escuro)
+  h1
+    color: var(--bege)
+    font-weight: bold
 .product-space
   width: 100%
   height: auto
   margin-bottom: 20px
+  color: var(--bege)
 </style>
