@@ -2,78 +2,49 @@
   div
     .categorias.container.d-flex.w-100
       button.col.col-masculina(
-        @click='showMasculina = !showMasculina'
+        @click='showMasculina'
       ) MASCULINA
       button.col.col-acessorios(
-        @click='showAcessorios = !showAcessorios'
+        @click='showAcessorios'
       ) ACESSÓRIOS
       button.col.col-feminina(
-        @click='showFeminina = !showFeminina'
+        @click='showFeminina'
       ) FEMININA
-    .container.categoria-homem.mt-4(
-      v-show='showMasculina'
-    )
+    .container.categoria-homem.mt-4
       h1 MODA PARA HOMENS
         h3 Seu estilo rústico mais agroboy
         h2.mt-4.mb-4 Camisas
         .product-space.d-flex.justify-content-center
           ProductCard(
-            categoria='masculina'
-            imageName='camisa-gustavolima.png'
-            productName='Camisa G-Lima'
-            :productPrice='120.56'
-          )
-          ProductCard(
-            categoria='masculina'
-            imageName='camisa-xitaozinho.png'
-            productName='Camisa Xitaozin'
-            :productPrice='100.99'
-          )
-          ProductCard(
-            categoria='masculina'
-            imageName='camisa-xororo.png'
-            productName='Camisa Xororo'
-            :productPrice='220.00'
+            v-for='item in items'
+            :key='item.type'
+            :productId='item.id'
+            :categoria='item.type'
+            :image='item.imageurl'
+            :productName='item.name'
+            :productPrice='item.price'
           )
         h2.mt-4.mb-4 Calças
         .product-space.d-flex.justify-content-center
           ProductCard(
-            categoria='masculina'
-            imageName='calca1.png'
-            productName='Calça G-Lima'
-            :productPrice='180.00'
-          )
-          ProductCard(
-            categoria='masculina'
-            imageName='calca2.png'
-            productName='Calça Xitaozin'
-            :productPrice='149.99'
-          )
-          ProductCard(
-            categoria='masculina'
-            imageName='calca3.png'
-            productName='Calça Xororo'
-            productPrice='130.00'
+            v-for='item in items'
+            :key='item.id'
+            :productId='item.id'
+            :categoria='item.type'
+            :image='item.imageurl'
+            :productName='item.name'
+            :productPrice='item.price'
           )
         h2.mt-4.mb-4 Botas
         .product-space.d-flex.justify-content-center
           ProductCard(
-            categoria='masculina'
-            imageName='bota1.jpg'
-            productName='Bota G-Lima'
-            :productPrice='420.00'
-          )
-          ProductCard(
-            categoria='masculina'
-            imageName='bota2.jpg'
-            productName='Bota Xitaozin'
-            :productPrice='380.00'
-          )
-          ProductCard(
-            categoria='masculina'
-            imageName='bota3.png'
-            productName='Bota Xororo'
-            :productPrice='299.00'
+            v-for='item in items'
+            :key='item.id'
+            :productId='item.id'
+            :categoria='item.type'
+            :image='item.imageurl'
+            :productName='item.name'
+            :productPrice='item.price'
           )
     .container.categoria-mulher.mt-4(
       v-show='showFeminina'
@@ -83,62 +54,35 @@
         h2.mt-4.mb-4 Camisas
         .product-space.d-flex.justify-content-center
           ProductCard(
-            categoria='feminina'
-            imageName='camisa1.png'
-            productName='Camisa Marilia'
-            :productPrice='199.99'
-          )
-          ProductCard(
-            categoria='feminina'
-            imageName='camisa2.png'
-            productName='Camisa Paula'
-            :productPrice='100.00'
-          )
-          ProductCard(
-            categoria='feminina'
-            imageName='camisa3.png'
-            productName='Camisa Bruna'
-            :productPrice='179.99'
+            v-for='item in items'
+            :key='item.id'
+            :productId='item.id'
+            :categoria='item.type'
+            :image='item.imageurl'
+            :productName='item.name'
+            :productPrice='item.price'
           )
         h2.mt-4.mb-4 Calças
         .product-space.d-flex.justify-content-center
           ProductCard(
-            categoria='feminina'
-            imageName='calca1.png'
-            productName='Calça Marilia'
-            :productPrice='400.00'
-          )
-          ProductCard(
-            categoria='feminina'
-            imageName='calca2.png'
-            productName='Calça Paula'
-            :productPrice='250.00'
-          )
-          ProductCard(
-            categoria='feminina'
-            imageName='calca3.png'
-            productName='Calça Bruna'
-            :productPrice='320.00'
+            v-for='item in items'
+            :key='item.id'
+            :productId='item.id'
+            :categoria='item.type'
+            :image='item.imageurl'
+            :productName='item.name'
+            :productPrice='item.price'
           )
         h2.mt-4.mb-4 Botas
         .product-space.d-flex.justify-content-center
           ProductCard(
-            categoria='feminina'
-            imageName='botina1.png'
-            productName='Botina Marilia'
-            :productPrice='500.00'
-          )
-          ProductCard(
-            categoria='feminina'
-            imageName='botina2.png'
-            productName='Botina Paula'
-            :productPrice='400.00'
-          )
-          ProductCard(
-            categoria='feminina'
-            imageName='botina3.jpeg'
-            productName='Botina Bruna'
-            :productPrice='300.00'
+            v-for='item in items'
+            :key='item.id'
+            :productId='item.id'
+            :categoria='item.type'
+            :image='item.imageurl'
+            :productName='item.name'
+            :productPrice='item.price'
           )
     .container.categoria-acessorio.mt-4(
       v-show='showAcessorios'
@@ -148,48 +92,31 @@
         h2.mt-4.mb-4 Cintos
         .product-space.d-flex.justify-content-center
           ProductCard(
-            categoria='acessorios'
-            imageName='cinto1.png'
-            productName='Cinto Peão'
-            :productPrice='199.99'
-          )
-          ProductCard(
-            categoria='acessorios'
-            imageName='cinto2.png'
-            productName='Camisa Fazendeiro'
-            :productPrice='100.00'
-          )
-          ProductCard(
-            categoria='acessorios'
-            imageName='cinto3.png'
-            productName='Camisa Vaqueiro'
-            :productPrice='179.99'
+            v-for='item in items'
+            :key='item.id'
+            :productId='item.id'
+            :categoria='item.type'
+            :image='item.imageurl'
+            :productName='item.name'
+            :productPrice='item.price'
           )
         h2.mt-4.mb-4 Chapéus
         .product-space.d-flex.justify-content-center
           ProductCard(
-            categoria='acessorios'
-            imageName='chapeu1.png'
-            productName='Chapeu Peão'
-            :productPrice='400.00'
-          )
-          ProductCard(
-            categoria='acessorios'
-            imageName='chapeu2.png'
-            productName='Chapeu Vaqueiro'
-            :productPrice='250.00'
-          )
-          ProductCard(
-            categoria='acessorios'
-            imageName='chapeu3.png'
-            productName='Chapeu Salém'
-            :productPrice='320.00'
+            v-for='item in items'
+            :key='item.id'
+            :productId='item.id'
+            :categoria='item.type'
+            :image='item.imageurl'
+            :productName='item.name'
+            :productPrice='item.price'
           )
 </template>
 
 <script>
 import ProductCard from '@/components/ProductCard.vue';
 import Category from '@/components/Category.vue';
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   components: {
@@ -198,10 +125,29 @@ export default {
   },
   data() {
     return {
-      showMasculina: true,
-      showFeminina: true,
-      showAcessorios: true,
+      items: [],
     };
+  },
+  created() {
+    this.fetchProducts();
+  },
+  computed: {
+    ...mapGetters(['getProducts']),
+  },
+  methods: {
+    ...mapActions(['fetchProducts']),
+    showMasculina() {
+      this.items = this.getProducts.filter((product) => product.sex === 'M');
+      console.log(this.items);
+    },
+    showFeminina() {
+      this.items = this.getProducts.filter((product) => product.sex === 'F');
+      console.log(this.items);
+    },
+    showAcessorios() {
+      this.items = this.getProducts.filter((product) => product.category === 'accessory');
+      console.log(this.items);
+    },
   },
 };
 </script>

@@ -187,7 +187,8 @@
       "imageurl": "http://localhost:3000/assets/images/cinto1.png",
       "description": "Uma belo cinto 1",
       "stock": "11",
-      "price": 111.00
+      "price": 111.00,
+      "category": "accessory"
     },
     {
       "id": 20,
@@ -196,7 +197,8 @@
       "imageurl": "http://localhost:3000/assets/images/cinto2.png",
       "description": "Uma belo cinto 2",
       "stock": "22",
-      "price": 211.00
+      "price": 211.00,
+      "category": "accessory"
     },
     {
       "id": 21,
@@ -205,7 +207,8 @@
       "imageurl": "http://localhost:3000/assets/images/cinto3.png",
       "description": "Uma belo cinto 3",
       "stock": "50",
-      "price": 100.00
+      "price": 100.00,
+      "category": "accessory"
     },
     {
       "id": 22,
@@ -214,7 +217,8 @@
       "imageurl": "http://localhost:3000/assets/images/chapeu1.png",
       "description": "Uma belo chapéu 1",
       "stock": "10",
-      "price": 500.00
+      "price": 500.00,
+      "category": "accessory"
     },
     {
       "id": 23,
@@ -223,7 +227,8 @@
       "imageurl": "http://localhost:3000/assets/images/chapeu2.png",
       "description": "Uma belo chapéu 2",
       "stock": "50",
-      "price": 350.00
+      "price": 350.00,
+      "category": "accessory"
     },
     {
       "id": 24,
@@ -232,7 +237,8 @@
       "imageurl": "http://localhost:3000/assets/images/chapeu3.png",
       "description": "Uma belo chapéu 3",
       "stock": "60",
-      "price": 150.00
+      "price": 150.00,
+      "category": "accessory"
     }
   ],
   "avaliacao": [
