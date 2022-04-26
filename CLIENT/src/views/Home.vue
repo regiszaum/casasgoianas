@@ -9,7 +9,6 @@
       Category(imageName='BotinasC.png' categoryName='Botinas')
       Category(imageName='CalcasC.png' categoryName='Calcas')
       Category(imageName='CamisasC.png' categoryName='Camisas')
-    CartModal
 </template>
 
 <script>
@@ -18,7 +17,6 @@ import ProductsCorousel from '@/components/ProductsCorousel.vue';
 import ProductCard from '@/components/ProductCard.vue';
 import Category from '@/components/Category.vue';
 import { mapGetters, mapActions } from 'vuex';
-import CartModal from '@/components/CartModal.vue';
 
 export default {
   components: {
@@ -26,7 +24,6 @@ export default {
     ProductCard,
     Category,
     ProductsCorousel,
-    CartModal,
   },
   created() {
     this.fetchProducts();

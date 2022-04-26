@@ -23,6 +23,12 @@ export default new Vuex.Store({
       }
       state.usuario.carrinho.push(newProduct);
     },
+    REMOVE_PRODUCT_FROM_CART(state, productId) {
+      console.log('to aq');
+      console.log(state.usuario.carrinho);
+      const index = state.usuario.carrinho.findIndex((product) => product.productId === productId);
+      if (index !== -1) state.usuario.carrinho.splice(index, 1);
+    },
   },
   actions: {
     fetchProducts({ commit }) {
