@@ -12,9 +12,11 @@
             :product='getProductById(item.productId)'
             :productQtd='item.qtd'
           )
-        .modal-footer
-          button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Fechar
-          button.btn.btn-primary(type='button') Concluir Compra
+        .modal-footer.d-flex.justify-content-between
+          .price Total a Pagar: R$ {{getTotalToPay}}
+          .buttons
+            button.btn.btn-secondary.me-2(type='button' data-bs-dismiss='modal') Fechar
+            button.btn.btn-primary(type='button') Concluir Compra
 </template>
 
 <script>
@@ -37,6 +39,7 @@ export default {
     ...mapGetters([
       'getCartProducts',
       'getProductById',
+      'getTotalToPay',
     ]),
   },
 };

@@ -44,7 +44,7 @@ export default {
       if (this.produtoQtd !== 1) this.produtoQtd -= 1;
     },
     addToCart() {
-      this.ADD_PRODUCT_TO_CART({ productId: this.$route.params.id, qtd: this.produtoQtd });
+      this.ADD_PRODUCT_TO_CART({ productId: this.$route.params.id, qtd: this.produtoQtd, totalPrice: (this.produtoQtd * this.getProductById(this.$route.params.id).price) });
     },
   },
   computed: {

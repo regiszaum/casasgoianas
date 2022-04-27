@@ -8,6 +8,7 @@ export default new Vuex.Store({
     products: [],
     usuario: {
       carrinho: [],
+      totalToPay: 0,
     },
   },
   mutations: {
@@ -15,19 +16,36 @@ export default new Vuex.Store({
       state.products = payload.products;
     },
     ADD_PRODUCT_TO_CART(state, newProduct) {
-      for (let i = 0; i < state.usuario.carrinho.length; i += 1) {
-        if (state.usuario.carrinho[i].productId === newProduct.productId) {
-          state.usuario.carrinho[i].qtd += newProduct.qtd;
-          return;
-        }
+      const alreadyInIndex = state.usuario.carrinho.findIndex((item) => item.productId === newProduct.productId);
+
+      if (alreadyInIndex !== -1) {
+        state.usuario.carrinho[alreadyInIndex].qtd += newProduct.qtd;
+        state.usuario.carrinho[alreadyInIndex].totalPrice += newProduct.totalPrice;
+      } else {
+        state.usuario.carrinho.push(newProduct);
       }
-      state.usuario.carrinho.push(newProduct);
+
+      console.log(state.usuario.carrinho);
+
+      /* SET_TOTAL_TO_PAY */
+      state.usuario.totalToPay = 0;
+      state.usuario.carrinho.forEach((item) => {
+        state.usuario.totalToPay += item.totalPrice;
+      });
+
+      console.log(state.usuario.totalToPay);
     },
     REMOVE_PRODUCT_FROM_CART(state, productId) {
-      console.log('to aq');
-      console.log(state.usuario.carrinho);
       const index = state.usuario.carrinho.findIndex((product) => product.productId === productId);
       if (index !== -1) state.usuario.carrinho.splice(index, 1);
+
+      /* SET_TOTAL_TO_PAY */
+      state.usuario.totalToPay = 0;
+      state.usuario.carrinho.forEach((item) => {
+        state.usuario.totalToPay += item.totalPrice;
+      });
+
+      console.log(state.usuario.totalToPay);
     },
   },
   actions: {
@@ -37,7 +55,6 @@ export default new Vuex.Store({
           commit('SET_PRODUCTS', { products: result });
           resolve();
         }).catch((err) => {
-          console.log(err);
           reject(err);
         });
       });
@@ -53,6 +70,9 @@ export default new Vuex.Store({
     },
     getCartProducts(state) {
       return state.usuario.carrinho;
+    },
+    getTotalToPay(state) {
+      return state.usuario.totalToPay;
     }
   },
   modules: {
