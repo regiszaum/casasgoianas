@@ -18,6 +18,8 @@
             router-link.nav-link.active(to='/') Home
           li.nav-item
             router-link.nav-link(to='/produtos') Produtos
+          li.nav-item
+            router-link.nav-link(to='/checkout') Checkout
         i.bi.bi-cart3.d-flex(
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
