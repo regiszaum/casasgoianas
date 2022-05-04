@@ -2,12 +2,10 @@
   div.card
     .row.h-100
       .col-4.h-100.d-flex.align-items-center.justify-content-center
-        img.w-50(
-            :src='product.imageurl'
-        )
+        img#product-img.w-50(:src='product.imageurl')
       .col-8.h-100.text-start.p-3.d-flex.flex-column
-        span {{product.name}}
-        span.mt-2 Qtd: {{productQtd}}
+        span#product-name {{product.name}}
+        span#product-qtd.mt-2 Qtd: {{productQtd}}
     i.x-icon.bi.bi-x(
         style="font-size: 1.5rem;"
         @click='removeItem'
