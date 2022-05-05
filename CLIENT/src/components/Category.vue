@@ -1,10 +1,10 @@
 <template lang='pug'>
   .category-card.d-flex.flex-column.text-start
     .img-card
-        img(
-            :src='require(`@/assets/${imageName}`)'
-            alt='...'
-        )
+      img(
+        :src='require(`@/assets/${imageName}`)'
+        alt='...'
+      )
 </template>
 
 <script>
