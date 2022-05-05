@@ -1,23 +1,26 @@
 <template lang="pug">
-  div#checkout-body
-    h1 Checkout
-    .d-flex.flex-column
+  div.body-checkout.d-flex
+    div.form-checkout
+      FormCheckout
+    div.cart-checkout
       CartItem.mt-2(
-        v-if='items'
-        v-for='item in items'
-        :product='getProductById(item.productId)'
-        :productQtd='item.qtd'
-      )
-    .checkout-footer
-      button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Fechar
-      button.btn.btn-primary(type='button') Finalizar
+            v-if='items'
+            v-for='item in items'
+            :product='getProductById(item.productId)'
+            :productQtd='item.qtd'
+          )
+    .checkout-footer.d-flex.justify-content-center.pt-5
+      button.btn.btn-secondary.my-2(type='button') Fechar
+      button.btn.btn-primary.ms-3.my-2(type='button') Finalizar
 </template>
 <script>
-import CartItem from '@/components/CartItem.vue';
+import FormCheckout from '@/components/FormCheckout.vue';
 import { mapGetters } from 'vuex';
+import CartItem from '@/components/CartItem.vue';
 
 export default {
   components: {
+    FormCheckout,
     CartItem,
   },
   data() {
@@ -38,7 +41,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-#checkout-body
+.body-checkout
   background-color: var(--verde)
   justify-content: center;
   display: flex;
@@ -58,4 +61,11 @@ export default {
     background-color: var(--bege)
     color: var(--verde-escuro)
     font-weight: bold
+  .modal-dialog
+      margin-right: 0px
+      margin-top: 0px
+      margin-bottom: 0px
+      height: 100%
+      .modal-content
+        height: 100%
 </style>

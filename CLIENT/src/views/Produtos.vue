@@ -13,7 +13,7 @@
     .container.categoria-homem.mt-4
       h1 MODA PARA HOMENS
         h3 Seu estilo rústico mais agroboy
-        h2.mt-4.mb-4 Camisas
+        h2.mt-4.mb-4(v-show='camisaMasculina') Camisas
         .product-space.d-flex.justify-content-center
           ProductCard(
             v-for='item in items'
@@ -24,7 +24,7 @@
             :productName='item.name'
             :productPrice='item.price'
           )
-        h2.mt-4.mb-4 Calças
+        h2.mt-4.mb-4(v-if='calcaMasculina') Calças
         .product-space.d-flex.justify-content-center
           ProductCard(
             v-for='item in items'
@@ -35,7 +35,7 @@
             :productName='item.name'
             :productPrice='item.price'
           )
-        h2.mt-4.mb-4 Botas
+        h2.mt-4.mb-4(v-if='botaMasculina') Botas
         .product-space.d-flex.justify-content-center
           ProductCard(
             v-for='item in items'
@@ -145,6 +145,18 @@ export default {
     showAcessorios() {
       this.items = this.getProducts.filter((product) => product.category === 'accessory');
     },
+    camisaMasculina() {
+      this.items = this.getProducts.filter((product) => product.sex === 'M' && product.type === 'camisa');
+    },
+    calcaMasculina() {
+      this.items = this.getProducts.filter((product) => product.sex === 'M' && product.type === 'calca');
+    },
+    botaMasculina() {
+      this.items = this.getProducts.filter((product) => product.sex === 'M' && product.type === 'bota');
+    },
+    // modaMasculina() {
+    //   (this.botaMasculina && this.calcaMasculina && this.camisaMasculina) = true;
+    // },
   },
 };
 </script>
